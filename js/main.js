@@ -79,7 +79,7 @@ if(!srcOne) {
       })
       .then((data) => {
         localStorage.setItem('localSourceOne', JSON.stringify(data));
-        sourceRender(data);
+        sourceRender(data, '.source-one');
       })
       .catch(function(error) {
        console.log(error);
@@ -91,7 +91,7 @@ if(!srcOne) {
          })
          .then((data) => {
            localStorage.setItem('localSourceTwo', JSON.stringify(data));
-           sourceRender(data);
+           sourceRender(data, '.source-two');
          })
          .catch(function(error) {
           console.log(error);
@@ -103,7 +103,7 @@ if(!srcOne) {
           })
           .then((data) => {
             localStorage.setItem('localSourceThree', JSON.stringify(data));
-            sourceRender(data);
+            sourceRender(data, '.source-three');
           })
           .catch(function(error) {
            console.log(error);
